@@ -33,6 +33,7 @@ export default createGlobalStyle`
     --white-2: #F1EEEE;
     --white-3:#F8F8F8;
     
+    --transparent: #5B5454;
   }
 
   .regular-weight {

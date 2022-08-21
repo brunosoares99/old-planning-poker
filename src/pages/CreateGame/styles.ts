@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import {Link} from "react-router-dom";
 
 export const Container = styled.div`
   width: 100vw;
@@ -13,17 +12,25 @@ export const MiddleBox = styled.div`
   margin-top: 10%;
 `
 
-export const H1 = styled.h1`
+export const H2 = styled.h2`
   font-size: 64px;
   color: var(--black);
+  font-size: 48px;
+  line-height: 62px;
 `
 
-export const H3 = styled.h3`
-  font-size: 36px;
+export const H5 = styled.h5`
   color: var(--gray-3);
   margin: 1rem 0 1rem 0;
+  font-size: 24px;
+  line-height: 31px;
+  margin-bottom: 3rem;
 `
 
-export const NavbarLink = styled(Link)`
-  text-decoration: none;
+export const BoxForm = styled.div`
+  display: flex;
+  flex-direction: column;
+  & > * {
+    margin-bottom: 2rem;
+  }
 `
