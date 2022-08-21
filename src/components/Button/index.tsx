@@ -1,16 +1,23 @@
+import { MouseEventHandler } from 'react';
 import { ButtonLayout } from './styles';
 
 interface IButtonProp {
   cssClasses?: string;
+  width?: string;
+  height?: string;
   children: React.ReactNode;
+  onClick?: MouseEventHandler<HTMLButtonElement>;
 }
 
 const Button: React.FC<IButtonProp> = ({
   cssClasses,
-  children
+  children,
+  width = '100%',
+  height = '100%',
+  onClick
 }) => {
   return (
-    <ButtonLayout className={cssClasses}>
+    <ButtonLayout onClick={onClick} width={width} height={height} className={cssClasses}>
       {children}
     </ButtonLayout>
   )
