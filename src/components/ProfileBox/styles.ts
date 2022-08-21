@@ -36,3 +36,37 @@ export const Name = styled.span`
   color: var(--gray-3);
   text-transform: uppercase;
 `
+
+export const ContainerModal = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 65px;
+  & input {
+    margin: 4rem 0 4rem 0;
+  }
+`
+
+export const BoxTitle = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  & h3 {
+    margin-bottom: 1rem;
+  }
+`
+
+export const H3 = styled.h3`
+  font-size: 36px;
+  line-height: 47px;
+  color: var(--gray-3);
+`
+
+export const Paragraph = styled.p`
+  color: var(--gray-3);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+`
