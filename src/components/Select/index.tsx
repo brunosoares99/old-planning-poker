@@ -10,8 +10,8 @@ const Select: React.FC<props> = ({
   children
 }) => {
   return (
-    <InputStyle placeholder={placeholder}>
-      <option value="" selected hidden>{placeholder}</option>
+    <InputStyle defaultValue={placeholder}>
+      <option value={placeholder} hidden>{placeholder}</option>
       {children}
     </InputStyle>
   )

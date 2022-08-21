@@ -1,6 +1,13 @@
 import styled from "styled-components";
 
-export const ButtonLayout = styled.button`
+interface ButtonProps {
+  width: string;
+  height: string;
+}
+
+export const ButtonLayout = styled.button<ButtonProps>`
+  width: ${props => props.width};
+  height: ${props => props.height};
   cursor: pointer;
   background-color: var(--purple-3);
   color: var(--white);
@@ -12,9 +19,7 @@ export const ButtonLayout = styled.button`
     width: 208px;
     height: 57px;
     border-radius: 19px;
-    font-size: 18px;
-
-    
+    font-size: 18px;    
   }
 
   &.large-button {

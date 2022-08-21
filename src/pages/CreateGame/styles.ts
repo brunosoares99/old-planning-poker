@@ -34,3 +34,18 @@ export const BoxForm = styled.div`
     margin-bottom: 2rem;
   }
 `
+export const ContainerModal = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 65px;
+  & input {
+    margin: 4rem 0 4rem 0;
+  }
+`
+
+export const H3 = styled.h3`
+  font-size: 36px;
+  line-height: 47px;
+  color: var(--gray-3);
+`
